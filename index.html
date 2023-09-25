@@ -4,51 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт-визитка студента</title>
-    <link rel="stylesheet" href="style.css">
     <style>
-        .background-size {
-            width: 2000px;
-            height: 2000px;
-        }
-        .youtube {
-    background-position: center;
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 50px 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    background-color:rgb(242, 242, 242, 0.5)
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+    * {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.background-imagine {
+    background-image: url('https://4kwallpapers.com/images/wallpapers/gargantua-black-3840x2160-9659.jpg');
     background-repeat: no-repeat;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    transition: all 200ms ease-out;
-    cursor: pointer;
-        }
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.center {
+    text-align: center;
+}
+
+.headdd {
+    background-color: rgb(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    padding: 1px 15px;
+    width: 80%;
+    max-width: 1200px; 
+    border-radius: 15px;
+    margin: 0 auto; 
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgb(255, 255, 255); 
+    margin: 10px 10px; 
+    padding: 10px 10px;
+    width: 90%;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul a:hover {
+    color: #ff0000;
+}
+
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.link {
+    background-color: rgb(255, 255, 255, 0.5);
+    color: #000000;
+    padding: 15px 25px;
+    border-radius: 7px;
+}
+
+
     </style>
 </head>
-<body class="background-size" background="https://i.pinimg.com/originals/f9/99/dc/f999dcb3e600f7b0024e3ec91635bf02.jpg">
-    <center>
-        <ul>
-            <a href="https://userq-ops.github.io/Glavnyi-php/">Главное</a>
-            <a href="https://userq-ops.github.io/Education-php/">Образование</a>
-            <a href="https://userq-ops.github.io/Opyt-php/">Опыт работы</a>
-            <a href="https://userq-ops.github.io/Achivment-php/">Достижения</a>
-            <a href="https://userq-ops.github.io/Contact-php/">Контакты</a>
-        </ul>
-    </center>
-    <header>
-        <center>
-        <h1>Добро пожаловать на мою сайт-визитку</h1>
-        <img src="https://github.com/Userq-ops/Glavnyi-php/blob/main/images/msg6112808773-1496.jpg?raw=true" alt="Фото студента" width="200px">
-    </header>
-</center style="margin">
-    <center style="padding-left: 0ch"> 
-    <div>
-        <h1 style="font-size: 20px; border: 20px; padding-right: 150px;">Приветствую! Меня зовут Лионель Рональдинио, и я студент, специализирующийся в области информационных технологий. Моя цель - развиваться в этой области и принести пользу миру через технологии.
+<body class="background-imagine">
+    <header class="center">
+        <div class="headdd">
+            <h1 id="aboutme" style="font-size: 40px;">Добро пожаловать на мою сайт-визитку</h1>
+            <img src="https://www.film.ru/sites/default/files/people/1457046-2440275.jpg" alt="Фото студента" width="200px">
+            <div>
+                <h1 style="font-size: 20px; border: 20px; padding-left: 15px; text-align: center;">Приветствую! Меня зовут Лионель Рональдинио, и я студент, специализирующийся в области информационных технологий. Моя цель - развиваться в этой области и принести пользу миру через технологии.
 
-            Мое образование включает в себя бакалаврскую степень в области информационных технологий, а также опыт работы в качестве стажера-программиста и технической поддержки. Я также горжусь своими достижениями, такими как первое место на региональной олимпиаде по информатике и разработка приложения для управления финансами, доступного в App Store.
-            
-            Кроме того, я активно участвую в волонтерской деятельности и стремлюсь делать мир лучше. Если вам нужен специалист в области информационных технологий или вы хотели бы связаться со мной, пожалуйста, посетите мой сайт www.ivanpetrov.com и воспользуйтесь формой обратной связи. Я всегда готов к новым вызовам и возможностям!</h1>
+                Мое образование включает в себя бакалаврскую степень в области информационных технологий, а также опыт работы в качестве стажера-программиста и технической поддержки. Я также горжусь своими достижениями, такими как первое место на региональной олимпиаде по информатике и разработка приложения для управления финансами, доступного в App Store.
+
+                Кроме того, я активно участвую в волонтерской деятельности и стремлюсь делать мир лучше. Если вам нужен специалист в области информационных технологий или вы хотели бы связаться со мной, пожалуйста, посетите мой сайт www.ivanpetrov.com и воспользуйтесь формой обратной связи. Я всегда готов к новым вызовам и возможностям!</h1>
+            </div>
+        </div>
+    </header>
+    <div>
+        <center style="padding: 25px;">
+            <ul>
+                <a href="#aboutme" class="link">Обо мне</a>
+                <a href="#education" class="link">Образование</a>
+                <a href="#video" class="link">Видео</a>
+                <a href="#exp" class="link">Опыт работы</a>
+                <a href="#achiv" class="link">Достижения</a>
+            </ul>
+        </center>
     </div>
-        <center>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/k9RU4uW0kSY?si=jwQ5HcUq1m-nWNZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <center>
+    <hr>
     </center>
-    <footer style="font-size: 20px;">
+    <div>
+        <center>
+                <table style="border: 1px;" id="education">
+                    <tr>
+                        <th>Учебное заведение</th>
+                        <th>Годы обучения</th>
+                        <th>Специализация</th>
+                        <th>Академические достижения</th>
+                    </tr>
+                    <tr>
+                        <td>Университет НУ</td>
+                        <td>2019-2023</td>
+                        <td>Информатика</td>
+                        <td>Стипендиат, диплом с отличием</td>
+                    </tr>
+                </table>
+        </center>
+    </div>
+    <center>
+        <hr>
+        </center>
+        <center>
+        <iframe id="video" style="padding: 50px;" width="560" height="315" src="https://www.youtube.com/embed/aEcvYmzMhGY?si=pi1GB9Zmf33MPgVf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </center>
+    <div> 
+        <center>
+            <hr>
+            </center>
+    <center>
+    <table id="exp">
+        <tr>
+            <td><strong>Компания FaceBook</strong></td>
+            <td>Должность: Программист (2023-настоящее время)</td>
+        </tr>
+        <tr>
+            <td><strong>Компания Google</strong></td>
+            <td>Должность: Аналитик данных (2020-2023)</td>
+        </tr>
+    </table>
+    </center>
+    </div>
+    <center>
+        <hr>
+        </center>
+    <div class="headdd">
+        <center>
+            <ul style="padding: 100px;" id="achiv">
+                <li>Участие в проекте "Программирование будущего"</li>
+                <li>Победитель чемпионата по шахматам</li>
+                <li>Автор нескольких статей о программировании</li>
+                <li>Сделал подставное преступление в детском саду, чтобы спасти детей и подарили мне шикарный Дом в Астане за спасение детей</li>
+            </ul>
+        </center>
+    </div>
+    <footer>
         <p>&copy; 2023 Лионель Рональдинио</p>
     </footer>
 </body>
